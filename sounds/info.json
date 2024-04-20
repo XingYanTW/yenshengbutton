@@ -1,0 +1,60 @@
+{
+    "sounds": [
+        {
+            "name": "都是我的錯",
+            "file": "allmyfault"
+        },
+        {
+            "name": "你嘴不要那麼賤",
+            "file": "badmouth"
+        },
+        {
+            "name": "你腦子壞掉了",
+            "file": "brokenbrain"
+        },
+        {
+            "name": "你講那種話可以信嗎",
+            "file": "canitrust"
+        },
+        {
+            "name": "關我什麼事",
+            "file": "dontcare"
+        },
+        {
+            "name": "我有領錢是不是",
+            "file": "dontgetmoney"
+        },
+        {
+            "name": "鴨蛋",
+            "file": "egg"
+        },
+        {
+            "name": "我欠你嗎",
+            "file": "ioweyou"
+        },
+        {
+            "name": "我的錯喔是不是",
+            "file": "isitmyfault"
+        },
+        {
+            "name": "寒暑假交朋友一起來",
+            "file": "makefriends"
+        },
+        {
+            "name": "你沒有機會了",
+            "file": "nochance"
+        },
+        {
+            "name": "我錯的地方在這裡",
+            "file": "thisismyfault"
+        },
+        {
+            "name": "我給你方便",
+            "file": "whatever"
+        },
+        {
+            "name": "你在幹嘛",
+            "file": "whatrudoing"
+        }
+    ]
+}
