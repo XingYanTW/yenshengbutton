@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name</title>
+</head>
+<body>
+    <p id="randomName">Loading...</p>
+
+    <script>
+        // Function to fetch and display a random name
+        async function displayRandomName() {
+            try {
+                // Fetch the content of the name.txt file
+                const response = await fetch('./sounds/name.txt');
+                if (!response.ok) {
+                    throw new Error('Failed to load the file');
+                }
+
+                // Read the file content as text
+                const text = await response.text();
+
+                // Split the content into lines
+                const names = text.split('\n').map(name => name.trim()).filter(name => name);
+
+                // Select a random name
+                const randomName = names[Math.floor(Math.random() * names.length)];
+
+                // Display the random name
+                document.getElementById('randomName').textContent = randomName;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('randomName').textContent = 'Error loading names.';
+            }
+        }
+
+        // Call the function when the page loads
+        window.addEventListener('DOMContentLoaded', displayRandomName);
+    </script>
+</body>
+</html>
